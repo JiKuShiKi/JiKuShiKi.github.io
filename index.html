@@ -279,6 +279,19 @@
       body { grid-template-columns: 1fr; }
       .sidebar { position: static; height: auto; }
     }
+    /* ── ZEITLEISTE ── */
+    .tl-section-label{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-3);margin:1.25rem 0 0.75rem 52px;}
+    .tl-item{display:grid;grid-template-columns:40px 12px 1fr;gap:0 12px;margin-bottom:8px;align-items:start;}
+    .tl-year{font-size:11px;color:var(--text-3);text-align:right;padding-top:3px;font-family:var(--mono);}
+    .tl-line-wrap{display:flex;flex-direction:column;align-items:center;}
+    .tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:2px;}
+    .tl-connector{width:1px;background:var(--border);flex:1;min-height:20px;margin-top:3px;}
+    .tl-card{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.625rem 0.875rem;margin-bottom:0;}
+    .tl-card-title{font-size:13px;font-weight:500;color:var(--text);}
+    .tl-card-sub{font-size:12px;color:var(--text-2);margin-top:2px;}
+    .tl-card-date{font-size:11px;color:var(--text-3);margin-top:3px;font-family:var(--mono);}
+    .tl-badge{display:inline-block;font-size:10px;padding:1px 7px;border-radius:4px;margin-top:5px;}
+
   </style>
 </head>
 <body>
@@ -297,6 +310,7 @@
     <a href="#github" class="nav-item"><span class="nav-icon">◈</span> GitHub</a>
     <a href="#ueber" class="nav-item"><span class="nav-icon">◎</span> Über mich</a>
     <a href="#skills" class="nav-item"><span class="nav-icon">⚙</span> Skills</a>
+    <a href="#werdegang" class="nav-item"><span class="nav-icon">◷</span> Werdegang</a>
   </nav>
 
   <div>
@@ -444,6 +458,141 @@
       <div class="skill-name">Chemie</div>
       <div class="skill-level"><div class="skill-bar" style="width:50%;background:#5C9EFF;"></div></div>
       <div class="skill-label">Grundkenntnisse</div>
+    </div>
+  </div>
+
+  <!-- WERDEGANG -->
+  <div class="section-header" id="werdegang">Werdegang</div>
+
+  <div class="tl-section-label">Ausbildung</div>
+
+  <div class="tl-item">
+    <div class="tl-year">2026</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#639922;border:2px solid #3B6D11;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">ZIB-Training GmbH</div>
+      <div class="tl-card-sub">Jugendbildungszentrum · St. Pölten</div>
+      <div class="tl-card-date">02.03.2026 – laufend</div>
+      <span class="tl-badge" style="background:#0E2008;color:#7AB82E;border:0.5px solid #2A4A10;">Aktuell</span>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2024</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#7F77DD;border:2px solid #534AB7;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Fit im Handwerk</div>
+      <div class="tl-card-sub">Qualifizierung Elektrotechnik</div>
+      <div class="tl-card-date">01.2024 – 06.2024</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2022</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#7F77DD;border:2px solid #534AB7;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Pflichtschulabschluss</div>
+      <div class="tl-card-sub">WIFI St. Pölten</div>
+      <div class="tl-card-date">09.2022 – 07.2023</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2012</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#888780;border:2px solid #5F5E5A;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Neue Sportmittelschule Tulln</div>
+      <div class="tl-card-date">09.2012 – 06.2015</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2007</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#888780;border:2px solid #5F5E5A;"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Volksschule Zwentendorf</div>
+      <div class="tl-card-date">09.2007 – 06.2012</div>
+    </div>
+  </div>
+
+  <div class="tl-section-label">Berufserfahrung</div>
+
+  <div class="tl-item">
+    <div class="tl-year">2024</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#378ADD;border:2px solid #185FA5;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Gemeinnützige Sanierungs- und Beschäftigungs GmbH</div>
+      <div class="tl-card-sub">Transitarbeiter · Fehlersuche Elektroaltgeräte</div>
+      <div class="tl-card-date">06.2024 – 12.2024</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2018</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#378ADD;border:2px solid #185FA5;"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Gabarage Upcycling Design</div>
+      <div class="tl-card-sub">Produktion</div>
+      <div class="tl-card-date">09.2018 – 01.2020</div>
+    </div>
+  </div>
+
+  <div class="tl-section-label">Praktika</div>
+
+  <div class="tl-item">
+    <div class="tl-year">2026</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#EF9F27;border:2px solid #BA7517;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Billa AG</div>
+      <div class="tl-card-sub">Einzelhandel</div>
+      <div class="tl-card-date">29.05.2026 – 05.06.2026</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2026</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#EF9F27;border:2px solid #BA7517;"></div>
+      <div class="tl-connector"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Donau Chemie AG</div>
+      <div class="tl-card-sub">Labor</div>
+      <div class="tl-card-date">26.05.2026 – 28.05.2026</div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-year">2025</div>
+    <div class="tl-line-wrap">
+      <div class="tl-dot" style="background:#EF9F27;border:2px solid #BA7517;"></div>
+    </div>
+    <div class="tl-card">
+      <div class="tl-card-title">Elektro Wildburger</div>
+      <div class="tl-card-sub">Elektrotechnik</div>
+      <div class="tl-card-date">07.07.2025 – 18.07.2025</div>
     </div>
   </div>
 
